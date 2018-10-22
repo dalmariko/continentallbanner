@@ -71,7 +71,7 @@
 <script src="/html.js"></script>
 <script src="script.js"></script>
 <script>
-      document.querySelector('.exitButton a').addEventListener('click',e => {
+      document.querySelector('.exitButton a').addEventListener('click',function(e){
         if (e.target.closest('.exitButton a')) {
             document.querySelector('.backgrounds').style.display = 'none';
             parent.postMessage('hideSG', '*');
